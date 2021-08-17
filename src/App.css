@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.grid {
+  display: grid;
+  gap: 20px;
+  width: 100%;
   min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 40px;
+  background: #fffdf8;
+  grid-auto-rows: 150px;
+}
+.header{
+  grid-row: 60px;
+  background-color: #fffbef;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+  z-index: 0;
+}
+.estiloRodape {
+  grid-row: 40px;
+  background-color: #fffbef;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.42);
+}
+/* essa classe pode ser chamada diretamente dentro de qualquer componente que tenha necessidade de ser renderizado nessa área do grid definida */
+.content {
+  grid-row: auto;
+}
+/* Estilos  que são usados pela aplicaçao inteira*/
+.title {
+  font-family: var(--titles-font);
+  font-weight: 700;
+  font-size: 30px;
+  color: #5c0511;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+

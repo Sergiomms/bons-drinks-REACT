@@ -1,0 +1,28 @@
+.tagNav {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+.logo {
+  font-family: var(--logo-font);
+  font-size: 36px;
+  text-decoration: none;
+  color: #101010;
+  padding: 8px;
+  align-self: center;
+}
+.menuItem {
+  font-family: var(--title-font);
+  font-size: 26px;
+  text-decoration: none;
+  color: #101010;
+  padding: 10px;
+  align-self: center;
+}
+.logo:hover,
+.menuItem:focus,
+.menuItem:hover {
+  color: #f9ae48;
+}
+ 
+  

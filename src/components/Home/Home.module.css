@@ -1,0 +1,16 @@
+.mainTitle {
+  font-family: 'Bilbo Swash Caps';
+  font-size: 120px;
+  text-align: center;
+  color: #fffdf8;
+  z-index: 2;
+}
+  
+  /* como o grid tem gap para as linhas, eu pego e faço a imagem pegar desde a primeira linha até a última e coloco z-index do header e footer acima da foto para que fiquem visíveis nas suas respectivas linhas */
+.homeCover {
+    /* grid-column: 1/-1;
+    grid-row: 1/-1; */
+  background: url('../../imagens/bg-bons-drinks.jpg') no-repeat center;
+}
+  
+  
